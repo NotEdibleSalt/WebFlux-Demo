@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+
+  r2dbc:
+    url: r2dbc:mysql://*****:****/user?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: 1234
+    password: 1234
+    pool:
+      enabled: true
+      max-size: 10
+      initial-size: 10
+      validation-query: select 1
+
